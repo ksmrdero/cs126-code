@@ -1,0 +1,477 @@
+{
+  "startingRoom": "FrontGate",
+  "endingRoom": "Attic",
+  "player": {
+	"items": [
+      {
+        "name": "cell phone"
+      },
+      {
+        "name": "key chain"
+      },
+      {
+        "name": "wallet"
+      }
+	]
+  },
+  "rooms": [
+    {
+      "name": "FrontGate",
+      "description": "You are at the front gate...",
+      "directions": [
+        {
+          "directionName": "inside",
+          "room": "GreatHall",
+		  "enabled": "true",
+		  "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+	  "items":[]
+    },
+    {
+      "name": "GreatHall",
+      "description": "You have entered the great hall. It looks pretty great. ",
+      "directions": [
+        {
+          "directionName": "straight",
+          "room": "DiningHall",
+		  "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        },
+        {
+          "directionName": "right",
+          "room": "LivingRoom",
+		  "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        },
+        {
+          "directionName": "left",
+          "room": "Library",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+	  "items":[
+        {
+          "name": "photograph"
+        }
+      ]
+    },
+    {
+      "name": "DiningHall",
+      "description": "You are in the dining hall. Looks like no one has eaten here in a while... \nThe table looks dusty, and there's an unfinished plate of spaghetti. ",
+      "directions": [
+        {
+          "directionName": "right",
+          "room": "Kitchen",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        },
+        {
+          "directionName": "back",
+          "room": "GreatHall",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+      "items":[
+        {
+          "name": "unfinished spaghetti"
+        },
+        {
+          "name": "a hair pin"
+        }
+      ]
+    },
+    {
+      "name": "Kitchen",
+      "description": "You have entered the kitchen. This was the chef's work space. \nDishes litter the sink, and dirty silverware are scattered through the floor. A bloody knife is on the countertop. Looks pretty bad for the chef...",
+      "directions": [
+        {
+          "directionName": "right",
+          "room": "LivingRoom",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        },
+        {
+          "directionName": "backwards",
+          "room": "DiningHall",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+      "items":[
+        {
+          "name": "bloody knife"
+        },
+        {
+          "name": "unwashed silverware"
+        }
+      ]
+    },
+    {
+      "name": "LivingRoom",
+      "description": "Welcome to the living room. Nothing much to see here, just a couch and a tv.",
+      "directions": [
+        {
+          "directionName": "upstairs",
+          "room": "SecondFloor",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        },
+        {
+          "directionName": "left",
+          "room": "Kitchen",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        },
+        {
+          "directionName": "downstairs",
+          "room": "Basement",
+          "enabled": "false",
+          "validKeyNames":[
+            "an axe",
+            "a hair pin"
+          ],
+          "hidden": false
+        },
+        {
+          "directionName": "back",
+          "room": "GreatHall",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+      "items":[
+        {
+          "name": "tv remote"
+        }
+      ]
+    },
+    {
+      "name": "SecondFloor",
+      "description": "You are now on the second floor of the house.",
+      "directions": [
+        {
+          "directionName": "left",
+          "room": "SecondBedroom",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        },
+        {
+          "directionName": "straight",
+          "room": "MasterBedroom",
+          "enabled": "false",
+          "validKeyNames":[
+            "an axe",
+            "a hair pin"
+          ],
+          "hidden": false
+        },
+        {
+          "directionName": "right",
+          "room": "GuestRoom",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        },
+        {
+          "directionName": "downstairs",
+          "room": "LivingRoom",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+      "items":[]
+    },
+    {
+      "name": "SecondBedroom",
+      "description": "You have entered the second bedroom of the home. The bed is made and the room is tidy.",
+      "directions": [
+        {
+          "directionName": "back",
+          "room": "SecondFloor",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+      "items":[
+        {
+          "name": "bed sheets"
+        }
+
+      ]
+    },
+    {
+      "name": "GuestRoom",
+      "description": "You have entered the guest room. Usually, the butler sleeps here. \nLooks like he's been busy doing a lot of reading...",
+      "directions": [
+        {
+          "directionName": "back",
+          "room": "SecondFloor",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+      "items":[
+        {
+          "name": "suspicious magazines"
+        }
+
+      ]
+    },
+    {
+      "name": "MasterBedroom",
+      "description": "You have entered the master bedroom. Nothing really out of the ordinary here. \nPictures of a young couple scatter the walls.",
+      "directions": [
+        {
+          "directionName": "right",
+          "room": "MasterBathroom",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        },
+        {
+          "directionName": "left",
+          "room": "Closet",
+          "enabled": "false",
+          "validKeyNames":[
+            "a hair pin"
+          ],
+          "hidden": false
+        },
+        {
+          "directionName": "back",
+          "room": "SecondFloor",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+      "items":[
+        {
+          "name": "a night guard"
+        }
+      ]
+    },
+    {
+      "name": "Closet",
+      "description": "You are in a large walk-in closet. Look! There's a safe here!",
+      "directions": [
+        {
+          "directionName": "open",
+          "room": "Safe",
+          "enabled": "false",
+          "validKeyNames":[
+            "a key"
+          ],
+          "hidden": false
+        },
+        {
+          "directionName": "back",
+          "room": "MasterBedroom",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+      "items":[]
+    },
+    {
+      "name": "Safe",
+      "description": "You see a book -- no a diary -- but there's no name to it. ",
+      "directions": [
+        {
+          "directionName": "back",
+          "room": "Closet",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+      "items":[
+        {
+          "name": "a diary"
+        }
+      ]
+    },
+    {
+      "name": "MasterBathroom",
+      "description": "You have entered the master bathroom. Looks like there's a small cutout in the ceiling...",
+      "directions": [
+        {
+          "directionName": "back",
+          "room": "MasterBedroom",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        },
+        {
+          "directionName": "up",
+          "room": "Attic",
+          "enabled": "false",
+          "validKeyNames":[
+            "a copy of Moby Dick"
+          ],
+          "hidden": true
+        }
+      ],
+      "items":[
+        {
+          "name": "floss"
+        },
+        {
+          "name": "some shampoo"
+        },
+        {
+          "name": "a toothbrush"
+        }
+      ]
+    },
+    {
+      "name": "Basement",
+      "description": "You have entered the basement. Very spacious.",
+      "directions": [
+        {
+          "directionName": "upstairs",
+          "room": "LivingRoom",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        },
+        {
+          "directionName": "right",
+          "room": "WineCellar",
+          "enabled": "false",
+          "validKeyNames":[
+            "an axe"
+          ],
+          "hidden": false
+        },
+        {
+          "directionName": "straight",
+          "room": "GameRoom",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+      "items":[]
+    },
+    {
+      "name": "WineCellar",
+      "description": "You are in the wine cellar. Looks like whoever lived here had exquisite taste. \nBut look, there's a key!",
+      "directions": [
+        {
+          "directionName": "back",
+          "room": "Basement",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+      "items":[
+        {
+          "name": "a key"
+        },
+        {
+          "name": "some aged wine"
+        }
+      ]
+    },
+    {
+      "name": "GameRoom",
+      "description": "You are in the game room. This was where the butler spent most of his days...",
+      "directions": [
+        {
+          "directionName": "back",
+          "room": "Basement",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+      "items":[
+        {
+          "name": "a pool stick"
+        }
+      ]
+    },
+    {
+      "name": "Library",
+      "description": "You have entered the library. A statue of a knight in armour is right beside you. \nThe library is completely full of books, except there seems to be one opening...",
+      "directions": [
+        {
+          "directionName": "back",
+          "room": "GreatHall",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        },
+        {
+          "directionName": "inside",
+          "room": "SecretLibrary",
+          "enabled": "false",
+          "validKeyNames":[
+            "a diary"
+          ],
+          "hidden": true
+        }
+      ],
+      "items":[
+        {
+          "name": "an axe"
+        },
+        {
+          "name": "a copy of Moby Dick"
+        },
+        {
+          "name": "a moldy apple"
+        }
+      ]
+    },
+    {
+      "name": "SecretLibrary",
+      "description": "You have entered the secret lair. Everything you see proves the husband's to blame. Satisfied?",
+      "directions": [
+        {
+          "directionName": "back",
+          "room": "Library",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+      "items":[]
+    },
+    {
+      "name": "Attic",
+      "description": "Looks like the butler set up everything! You bring this to the authorities. Case closed.",
+      "directions": [
+        {
+          "directionName": "down",
+          "room": "MasterBathroom",
+          "enabled": "true",
+          "validKeyNames":[],
+          "hidden": false
+        }
+      ],
+      "items":[]
+    }
+  ]
+}

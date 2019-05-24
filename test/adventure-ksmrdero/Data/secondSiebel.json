@@ -1,0 +1,110 @@
+{
+  "startingRoom": "Presby Hall",
+  "endingRoom": "Siebel Center",
+  "rooms": [
+    {
+      "name": "Presby Hall",
+      "description": "You are at Presby Hall, a student dormatory with disgusting food.",
+      "directions": [
+        {
+          "directionName": "outside",
+          "room": "Green Street"
+        }
+      ]
+    },
+    {
+      "name": "Green Street",
+      "description": "You are at Green Street, there are many people and a lot of restaurants.",
+      "directions": [
+        {
+          "directionName": "West",
+          "room": "County Market"
+        },
+        {
+          "directionName": "East",
+          "room": "Alma Mater"
+        },
+        {
+          "directionName": "Inside",
+          "room": "Presby Hall"
+        }
+      ]
+    },
+    {
+      "name": "County Market",
+      "description": "You are at County Market, the products good and the prices fair!",
+      "directions": [
+        {
+          "directionName": "East",
+          "room": "Green Street"
+        }
+      ]
+    },
+    {
+      "name": "Alma Mater",
+      "description": "You stand below the Alma Mater. The Alma Mater is a bronze statue by sculptor Lorado Taft, a beloved symbol of the University of Illinois at Urbana-Champaign.",
+      "directions": [
+        {
+          "directionName": "West",
+          "room": "Green Street"
+        },
+        {
+          "directionName": "South",
+          "room": "UGL"
+        },
+        {
+          "directionName": "North",
+          "room": "ECEB"
+        }
+      ]
+    },
+    {
+      "name": "UGL",
+      "description": "You took the stairs down to the UGL. You are overwhelmed by the studious environment, you decide to study for a while.",
+      "directions": [
+        {
+          "directionName": "North",
+          "room": "Alma Mater"
+        },
+        {
+          "directionName": "SecretTunnel",
+          "room": "Main Library"
+        }
+      ]
+    },
+    {
+      "name": "Main Library",
+      "description": "You took the underground tunnel and arrived at the Main Library. UGL vs Main Library? Hard choice...",
+      "directions": [
+        {
+          "directionName": "SecretTunnel",
+          "room": "UGL"
+        }
+      ]
+    },
+    {
+      "name": "ECEB",
+      "description": "You see a shiny, cool-looking building in front of you. You step inside the ECEB. The good friends of us CS people, people say cs and ece goes together like peanut butter and jelly.",
+      "directions": [
+        {
+          "directionName": "South",
+          "room": "Alma Mater"
+        },
+        {
+          "directionName": "Northeast",
+          "room": "Siebel Center"
+        }
+      ]
+    },
+    {
+      "name": "Siebel Center",
+      "description": "Finally, you've arrived at Siebel, the place you've been looking for the entire time; the place that we all love, filled with helpful staffs and students. You decide you've had enough walking, time to sit down and do some coding.",
+      "directions": [
+        {
+          "directionName": "Southwest",
+          "room": "ECEB"
+        }
+      ]
+    }
+  ]
+}
